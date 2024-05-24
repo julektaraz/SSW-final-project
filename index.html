@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Scroll Website</title>
+	<link rel="stylesheet" href="styles.css" />
+	<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+			integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+			crossorigin="anonymous"
+	/>
+	<style>
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+	</style>
+</head>
+<body>
+<canvas id="snowCanvas"></canvas>
+<!-- Navbar Section -->
+<nav class="navbar">
+	<div class="navbar__container">
+		<a href="#home" id="navbar__logo">SynthWave</a>
+		<div class="navbar__toggle" id="mobile-menu">
+			<span class="bar"></span> <span class="bar"></span>
+			<span class="bar"></span>
+		</div>
+		<ul class="navbar__menu">
+			<li class="navbar__item">
+				<a href="#home" class="navbar__links" id="home-page">Home</a>
+			</li>
+			<li class="navbar__item">
+				<a href="#about" class="navbar__links" id="about-page">About</a>
+			</li>
+			<li class="navbar__item">
+				<a href="#services" class="navbar__links" id="services-page"
+				>Services</a
+				>
+			</li>
+			<li class="navbar__btn">
+				<a href="#sign-up" class="button" id="signup">Sign Up</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<div class="hero" id="home">
+	<div class="hero__container">
+		<h1 class="hero__heading">Welcome to the world of <span>Analog Synthesis</span></h1>
+		<p class="hero__description">Unleash Unlimited Sonic Possibilities</p>
+		<button class="main__btn"><a href="#">Dive In</a></button>
+	</div>
+</div>
+
+<!-- About Analog Synthesizers -->
+<div class="main" id="about">
+	<div class="main__container">
+		<div class="main__img--container">
+			<div class="main__img--card"><i class="fas fa-music"></i></div>
+		</div>
+		<div class="main__content">
+			<h1>What Are Analog Synthesizers?</h1>
+			<h2>Unlocking Sonic Exploration</h2>
+			<p>Discover the magic of voltage-controlled oscillators, filters, and more.</p>
+			<button class="main__btn"><a href="#">Learn More</a></button>
+		</div>
+	</div>
+</div>
+
+
+<!-- Services Section -->
+<!-- Synthesizer Services Section -->
+<div class="services" id="services">
+	<h1>Our Synthesizer Services</h1>
+	<div class="services">
+		<div class="services__card">
+			<h2>Custom Soundscapes</h2>
+			<p>Explore electronic waveforms and craft unique timbres using techniques like subtractive synthesis, additive synthesis, and frequency modulation.</p>
+			<div class="synthesizers__btn"><button>Get Started</button></div>
+		</div>
+		<div class="services__card">
+			<h2>Ready to Explore?</h2>
+			<p>Dive into the world of sound design and take the leap into sonic experimentation.</p>
+			<div class="synthesizers__btn"><button>Get Started</button></div>
+		</div>
+		<div class="services__card">
+			<h2>Full Spectrum Gradients</h2>
+			<p>Blend harmonics and frequencies with 100 combinations of sonic colors, from warm analog tones to futuristic digital textures.</p>
+			<div class="synthesizers__btn"><button>Get Started</button></div>
+		</div>
+		<div class="services__card">
+			<h2>Infinite Sonic Choices</h2>
+			<p>Navigate a palette of thousands of sounds to shape your sonic identity.</p>
+			<div class="services__btn"><button>Get Started</button></div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Features Section -->
+<div class="main" id="sign-up">
+	<div class="main__container">
+		<div class="main__content">
+			<h1>Explore Sound Synthesis</h1>
+			<h2>Join the Sonic Journey</h2>
+			<p>Discover what sets us apart</p>
+			<button class="main__btn"><a href="#">Get Started</a></button>
+		</div>
+		<div class="main__img--container">
+			<div class="main__img--card" id="card-2">
+				<i class="fas fa-users"></i>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Footer Section -->
+<div class="footer__container">
+	<div class="footer__links">
+		<div class="footer__link--wrapper">
+			<div class="footer__link--items">
+				<h2>About Us</h2>
+				<a href="/sign__up">How it works</a> <a href="/">Testimonials</a>
+				<a href="/">Careers</a> <a href="/">Terms of Service</a>
+			</div>
+			<div class="footer__link--items">
+				<h2>Contact Us</h2>
+				<a href="/">Contact</a> <a href="/">Support</a>
+				<a href="/">Destinations</a>
+			</div>
+		</div>
+		<div class="footer__link--wrapper">
+			<div class="footer__link--items">
+				<h2>Videos</h2>
+				<a href="/">Submit Video</a> <a href="/">Ambassadors</a>
+				<a href="/">Agency</a>
+			</div>
+			<div class="footer__link--items">
+				<h2>Social Media</h2>
+				<a href="/">Instagram</a> <a href="/">Facebook</a>
+				<a href="/">Youtube</a> <a href="/">Twitter</a>
+			</div>
+		</div>
+	</div>
+	<section class="social__media">
+		<div class="social__media--wrap">
+			<div class="footer__logo">
+				<a href="/" id="footer__logo">SynthWave</a>
+			</div>
+			<p class="website__rights">© SynthWave 2020. All rights reserved</p>
+			<div class="social__icons">
+				<a href="/" class="social__icon--link" target="_blank"
+				><i class="fab fa-facebook"></i
+				></a>
+				<a href="/" class="social__icon--link"
+				><i class="fab fa-instagram"></i
+				></a>
+				<a href="/" class="social__icon--link"
+				><i class="fab fa-youtube"></i
+				></a>
+				<a href="/" class="social__icon--link"
+				><i class="fab fa-linkedin"></i
+				></a>
+				<a href="/" class="social__icon--link"
+				><i class="fab fa-twitter"></i
+				></a>
+			</div>
+		</div>
+	</section>
+</div>
+
+
+
+<div id="animacja"></div>
+<script src="app.js"></script>
+
+</body>
+</html>
