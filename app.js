@@ -10,16 +10,14 @@ const mobileMenu = () => {
 
 menu.addEventListener('click', mobileMenu);
 
-// Show active menu when scrolling
+// pokazuje active menu kiedy scrolluje
 const highlightMenu = () => {
     const elem = document.querySelector('.highlight');
     const homeMenu = document.querySelector('#home-page');
     const aboutMenu = document.querySelector('#about-page');
     const servicesMenu = document.querySelector('#services-page');
     let scrollPos = window.scrollY;
-    // console.log(scrollPos);
 
-    // adds 'highlight' class to my menu items
     if (window.innerWidth > 960 && scrollPos < 600) {
         homeMenu.classList.add('highlight');
         aboutMenu.classList.remove('highlight');
@@ -43,7 +41,7 @@ const highlightMenu = () => {
 window.addEventListener('scroll', highlightMenu);
 window.addEventListener('click', highlightMenu);
 
-//  Close mobile Menu when clicking on a menu item
+//  zamykam mobile Menu gdy naciskam menu item
 const hideMobileMenu = () => {
     const menuBars = document.querySelector('.is-active');
     if (window.innerWidth <= 768 && menuBars) {
@@ -59,7 +57,6 @@ const canvas = document.getElementById('snowCanvas');
 const ctx = canvas.getContext('2d');
 const flakes = [];
 
-// Create snowflake class
 class Snowflake {
     constructor() {
         this.x = Math.random() * canvas.width;
@@ -84,12 +81,12 @@ class Snowflake {
     }
 }
 
-// Create snowflakes
+// tworze snowflake
 for (let i = 0; i < 100; i++) {
     flakes.push(new Snowflake());
 }
 
-// Animation loop
+// animacja
 function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     flakes.forEach(flake => {
@@ -99,7 +96,16 @@ function animate() {
     requestAnimationFrame(animate);
 }
 
-// Start animation
+// start animacji
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 animate();
+
+const loginForm = document.getElementById("loginForm");
+loginForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+    console.log("Username:", username);
+    console.log("Password:", password);
+});
