@@ -1,5 +1,4 @@
 /* Styling for desktop*/
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,15 +6,11 @@
     font-family: 'Kumbh Sans', sans-serif;
     scroll-behavior: smooth;
 }
-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
 body {
     font-family: 'Kumbh Sans', sans-serif;
     background-color: #131313;
 }
+
 .container {
     max-width: 400px;
     margin: 0 auto;
@@ -57,21 +52,6 @@ button {
 }
 button:hover {
     background-color: #005f73;
-}
-#demo {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #ddd;
-    border-radius: 5px;
-}
-#animacja {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    position: relative;
-    animation-name: example;
-    animation-duration: 8s;
-    animation-direction: reverse;
 }
 
 .navbar {
@@ -218,12 +198,12 @@ button:hover {
 .highlight {
     border-bottom: 4px solid rgb(132, 0, 255);
 }
+
 /* About Section */
 .main {
     background-color: #131313;
     padding: 10rem 0;
 }
-
 .main__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -335,6 +315,7 @@ button:hover {
     background: -webkit-linear-gradient(to right, #dd2476, #ff512f);
     background: linear-gradient(to right, #dd2476, #ff512f);
 }
+
 /* Services */
 .services {
     background: #131313;
@@ -370,32 +351,27 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Korg_MS-20.jpg/1200px-Korg_MS-20.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     transition: 0.3s ease-in;
 }
+
 .services__card:nth-child(2) {
-    background: #1fa2ff; /* old browsers */
-    background: -webkit-linear-gradient(
-            to right,
-            #a6ffcb,
-            #12d8fa,
-            #1fa2ff
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-            to right,
-            #a6ffcb,
-            #12d8fa,
-            #1fa2ff
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url('https://synthronics.de/wp-content/uploads/2019/06/korg_polysix_383786_01.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
 .services__card:nth-child(3) {
-    background-image: linear-gradient(
-            -225deg,
-            #231557 0%,
-            #44107a 29%,
-            #ff1361 67%,
-            #fff800 100%
-    );
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/22/Korg_MONO-POLY.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.services__card:nth-child(4) {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/0c/SH-101.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .services__card h2 {
     text-align: center;
