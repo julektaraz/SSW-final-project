@@ -305,7 +305,9 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+    background-image: url('https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2019/01/04/b3fce7b3-a7a5-44a4-bc2f-e616b187f70b/richard-devine-modular-synth');
+    background-size: cover;
+    background-position: center;
 }
 .fa-layer-group,
 .fa-users {
